@@ -182,37 +182,45 @@
             <h3>Bases de datos</h3>
             <h2>Modelo relacional</h2>
 
-            <table class="entidad">
-                <caption>CLIENTE</caption>
-                <tr><td>id_cliente (PK)</td></tr>
-                <tr><td>nombre</td></tr>
-                <tr><td>correo</td></tr>
-                <tr><td>telefono</td></tr>
-            </table>
+            <article class="entidad">
+                <table>
+                    <tr><th>CLIENTE</th></tr>
+                    <tr><td>id_cliente (PK)</td></tr>
+                    <tr><td>nombre</td></tr>
+                    <tr><td>correo</td></tr>
+                    <tr><td>telefono</td></tr>
+                </table>
+            </article>
 
-            <table class="entidad">
-                <caption>PAQUETE</caption>
-                <tr><td>id_paquete (PK)</td></tr>
-                <tr><td>nombre</td></tr>
-                <tr><td>precio</td></tr>
-            </table>
+            <article class="entidad">
+                <table>
+                    <tr><th>PAQUETE</th></tr>
+                    <tr><td>id_paquete (PK)</td></tr>
+                    <tr><td>nombre</td></tr>
+                    <tr><td>precio</td></tr>
+                </table>
+            </article>
 
-            <table class="entidad">
-                <caption>DESTINO</caption>
-                <tr><td>id_destino (PK)</td></tr>
-                <tr><td>nombre</td></tr>
-                <tr><td>ubicacion</td></tr>
-            </table>
+            <article class="entidad">
+                <table>
+                    <tr><th>DESTINO</th></tr>
+                    <tr><td>id_destino (PK)</td></tr>
+                    <tr><td>nombre</td></tr>
+                    <tr><td>ubicacion</td></tr>
+                </table>
+            </article>
 
-            <table class="entidad">
-                <caption>RESERVA</caption>
-                <tr><td>id_reserva (PK)</td></tr>
-                <tr><td>id_cliente (FK)</td></tr>
-                <tr><td>id_paquete (FK)</td></tr>
-                <tr><td>id_destino (FK)</td></tr>
-                <tr><td>fecha</td></tr>
-                <tr><td>estado</td></tr>
-            </table>
+            <article class="entidad">
+                <table>
+                    <tr><th>RESERVA</th></tr>
+                    <tr><td>id_reserva (PK)</td></tr>
+                    <tr><td>id_cliente (FK)</td></tr>
+                    <tr><td>id_paquete (FK)</td></tr>
+                    <tr><td>id_destino (FK)</td></tr>
+                    <tr><td>fecha</td></tr>
+                    <tr><td>estado</td></tr>
+                </table>
+            </article>
 
             <p>
                 <strong>Relaciones:</strong> un cliente puede tener muchas reservas; un paquete y un destino pueden
@@ -252,8 +260,6 @@
     <footer>
         <p>The Four Tour · Turismo local en Medellín · Proyecto integrador</p>
     </footer>
-
-    <a class="subir" href="#inicio">↑ Subir</a>
 
 </body>
 
